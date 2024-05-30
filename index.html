@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/KEPS.svg">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>KALIDAS Electricals & Plumbing Works</title>
+</head>
+
+<body>
+
+	<div class="modal-form mfp-hide mfp-with-anim" id="modal-form">
+
+		<div class="modal-form-head">
+			<div class="modal-form-logo">
+				<img src="images/logo-header.svg" alt="Construction">
+			</div>
+			<div class="modal-form-close">
+				<img src="images/close.svg" alt="Close">
+			</div>
+		</div>
+
+		<div class="modal-form-body">
+			<div class="modal-form-title">Request a call</div>
+			<form id="order">
+				<input type="text" id="name" placeholder="Your name*" required>
+				<input type="text" id="phone"placeholder="Your phone*" required>
+				<button  type="submit" class="form-button">Send</button>
+			</form>
+			<script>
+				document.getElementById('order').addEventListener('submit', function(event) {
+					event.preventDefault();
+		
+					var name = document.getElementById('name').value;
+					var phone = document.getElementById('phone').value;
+					//var email = document.getElementById('email').value;
+					var comment = document.getElementById('comment').value;
+		
+					// Construct message for WhatsApp
+					var message = encodeURIComponent(
+						`Name: ${name}%0A` +
+						`Phone: ${phone}%0A` +
+						
+						`Comment: ${comment}%0A%0A` +
+						`requested a call.`
+					);
+		
+					// WhatsApp number to send the message to (including country code)
+					var phoneNumber = '+917904812822'; // Replace with your WhatsApp number
+		
+					// WhatsApp URL
+					var whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+		
+					// Open WhatsApp in new tab
+					window.open(whatsappUrl, '_blank').focus();
+				});
+			</script>
+		</div>
+
+	</div>
+
+	<div class="go-up">
+		<a href="#">
+			<img src="images/arrow-up.svg" alt="Go up">
+		</a>
+	</div>
+	
+	<header class="site-header">
+
+		<div class="header-top">
+			<div class="container">
+				<div class="header-row">
+
+					<!-- Header top mobile START -->
+					<div class="header-mobile-logo">
+						<a href="#">
+							<img src="images/KEPS.svg" alt="Construction">
+						</a>
+					</div>
+
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+					</div>
+					<!-- Header top mobile END -->
+
+					<div class="header-desc">KALIDAS Electricals & Plumbing Works</div>
+					<div class="header-right">
+						<div class="header-info">
+							<img src="images/location.svg" alt=" 8/3180, PN Rd, Anna Nagar, Tiruppur">
+							<span> 8/3180, PN Rd, Anna Nagar, Tiruppur.</span>
+						</div>
+						<a href="tel:+91 95979 77228" class="header-info">
+							<img src="images/phone.svg" alt="+91 95979 77228">
+							<span>+91 95979 77228</span>
+						</a>
+
+						
+
+						<div class="header-social">
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==" target="_blank">
+								<img src="images/social-twitter.svg" alt="Twitter">
+							</a>
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg=="target="_blank">
+								<img src="images/social-insta.svg" alt="Вконтакте">
+							</a>
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg=="target="_blank">
+								<img src="images/social-facebook.svg" alt="Facebook">
+							</a>
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg=="target="_blank">
+								<img src="images/social-telegram.svg" alt="Telegram">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-row">
+					<div class="header-logo">
+						<a href="#">
+							<img src="images/KEPS.svg" alt="Construction">
+						</a>
+					</div>
+
+					<nav class="header-nav">
+						<ul>
+							<li><a class="anchor-link" href="#s-about">About us</a></li>
+							<li><a class="anchor-link" href="#s-services">Services</a></li>
+							<li><a class="anchor-link" href="#s-gallery">Gallery</a></li>
+							<li><a class="anchor-link" href="#s-team">Our Reviews</a></li>
+							<li><a class="anchor-link" href="#s-testimonials">Our Location</a></li>
+							<li><a class="anchor-link" href="#s-contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Header mobile START -->
+		<div class="header-mobile-wrap">
+			<nav class="header-mobile-nav">
+				<ul>
+					<li><a class="anchor-link" href="#s-about">About us</a></li>
+					<li><a class="anchor-link" href="#s-services">Services</a></li>
+					<li><a class="anchor-link" href="#s-gallery">Gallery</a></li>
+					<li><a class="anchor-link" href="#s-team">Our Reviews</a></li>
+					<li><a class="anchor-link" href="#s-testimonials">Our Location</a></li>
+					<li><a class="anchor-link" href="#s-contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-mobile-info">
+				<img src="images/location.svg" alt="ул. Гагарина 5Б г. Сочи">
+				<span>8/3180, PN Rd, Anna Nagar, Tiruppur. </span>
+			</div>
+			<a href="tel:+91 95979 77228" class="header-mobile-info">
+				<img src="images/phone.svg" alt="+91 95979 77228">
+				<span>+91 95979 77228</span>
+			</a>
+
+			<div class="header-mobile-social">
+				<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+					<img src="images/social-twitter.svg" alt="Twitter">
+				</a>
+				<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+					<img src="images/social-insta.svg" alt="Вконтакте">
+				</a>
+				<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+					<img src="images/social-facebook.svg" alt="Facebook">
+				</a>
+				<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+					<img src="images/social-telegram.svg" alt="Telegram">
+				</a>
+			</div>
+		</div>
+		<!-- Header mobile END -->
+
+	</header>
+
+
+	<section class="s-banner">
+		
+		<div class="swiper banner-swiper">
+			
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url(images/banner-bg-1.jpg)">
+					<div class="banner-content">
+						<div class="banner-subtitle wow fadeIn" data-wow-delay="0.1s">Welcome to KALIDAS Electricals & Plumbing Works</div>
+						<h2 class="banner-title wow fadeIn" data-wow-delay="0.2s">Your Trusted Partner for Electrical and Plumbing Services
+
+						</h2>
+						<a href="#s-services" class="banner-btn def-btn anchor-link wow fadeIn" data-wow-delay="0.3s">View Services</a>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background-image: url(images/banner-bg-2.jpg)">
+					<div class="banner-content">
+						<div class="banner-subtitle wow fadeIn">Affordable Pricing</div>
+						<h2 class="banner-title">We offer competitive rates without compromising on the quality of our services.</h2>
+						<a href="#s-services" class="banner-btn def-btn anchor-link">View Services</a>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background-image: url(images/banner-bg-3.jpg)">
+					<div class="banner-content">
+						<div class="banner-subtitle">Customer Satisfaction</div>
+						<h2 class="banner-title">Your satisfaction is our top priority</h2>
+						<a href="#s-services" class="banner-btn def-btn anchor-link">View Services</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination wow fadeInUp" data-wow-delay="0.5s"></div>
+			
+			<div class="container">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		
+		</div>
+
+	</section>
+
+	<section class="s-about" id="s-about">
+		<div class="container">
+
+			<div class="about-row">
+				<div class="about-left">
+					<h2 class="def-title wow fadeInLeft" data-wow-delay="0.2s">About our company</h2>
+					<div class="def-desc wow fadeInLeft" data-wow-delay="0.3s">
+						<strong>Tiruppur Electrician & Plumber</strong>
+						( Electricals & Plumbing Works )
+						
+						Home wiring works, plumbing works and industrial wiring are done in the best manner.
+						House, plot, land Buy and Sell.</br>
+						<strong>Address :</strong> 8/3180, PN Rd, Anna Nagar, Tiruppur, Chettipalayam, Tamil Nadu 641802.
+						<style>
+							.ph img {
+								filter:  brightness(0);
+							}
+							</style>
+						<div class="ph">
+						<a href="tel:9597977228" class="header-info">
+							<img src="images/phone.svg" alt="9597977228">
+							<span>+91 95979 77228</span>
+						</a></div>
+					</div>
+					<a href="#s-services" class="def-btn anchor-link wow fadeInLeft" data-wow-delay="0.4s">Order service</a>
+				</div>
+				
+				<div class="about-right">
+					<img src="images/about-bg.jpg" alt="О нас" class="wow fadeIn"  data-wow-delay="0.5s">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="s-numbers">
+		<div class="container">
+			<div class="numbers-row num-scroll">
+
+				<div class="numbers-left">
+					<h2 class="def-title color-white wow fadeInLeft" data-wow-delay="0.2s">Our company <br> in numbers</h2>
+					<div class="def-desc wow fadeInLeft" data-wow-delay="0.3s">
+						One important criterion of our company is customer orientation. When ordering our services, you can be sure of the quality of the result.
+					</div>
+				</div>
+
+				<div class="numbers-right">
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="100">0</div>
+						<div class="numbers-desc">
+							Satisfied <br>
+							clients
+						</div>
+					</div>
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="10">0</div>
+						<div class="numbers-desc">
+							Years of work experience
+						</div>
+					</div>
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="5">0</div>
+						<div class="numbers-desc">
+							Awards
+						</div>
+					</div>
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="100">0</div>
+						<div class="numbers-desc">
+							Realized <br>
+							projects
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s-services" id="s-services">
+		<div class="container">
+			<h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Our services</h2>
+
+			<div class="services-row">
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.1s">
+					<div class="services-thumb">
+						<img src="images/service-11.jpg" alt="Construction of houses"width="300" height="200">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">House, Plot, Land - Buy and Sell</h4>
+						<div class="services-desc">
+							Assistance with buying and selling houses, plots, and land
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.2s">
+					<div class="services-thumb">
+						<img src="images/service-22.jpeg" alt="Ремонт по дому" width="300" height="200">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">Electrical works</h4>
+						<div class="services-desc">
+							Home wiring works and industrial wiring are done in the best manner.
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.3s">
+					<div class="services-thumb">
+						<img src="images/service-33.jpeg" alt="Building design" width="300" height="200">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">Plumbing Works</h4>
+						<div class="services-desc">
+							Expert plumbing services for residential and commercial needs, ensuring efficient and reliable solutions.
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s-gallery" id="s-gallery">
+		<div class="container">
+			<h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Photo gallery</h2>
+		
+		<!----<div class="gallery-wrap">
+				<div class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.2s">
+					<div class='sk-ww-google-business-photo' data-embed-id='25419412'></div>
+				</div>
+				<span class="gallery-border"></span>
+			</div>
+			<script src='https://widgets.sociablekit.com/google-business-photos/widget.js' async defer></script>-->
+			
+				
+
+			<div class="gallery-wrap">
+				
+				
+
+				<a href="images/gallery-1.jpeg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.2s">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-1.jpeg" alt="Image 1">
+				</a>
+				<a href="images/gallery-2.jpeg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.3s">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-2.jpeg" alt="Image 2">
+				</a>
+				<a href="images/gallery-3.jpeg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.4s"> 
+					<span class="gallery-border"></span>
+					<img src="images/gallery-3.jpeg" alt="Image 3">
+				</a>
+				<a href="images/gallery-4.jpeg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.5s">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-4.jpeg" alt="Image 4">
+				</a>
+				<a href="images/gallery-5.jpeg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.6s">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-5.jpeg" alt="Image 5">
+				</a>
+				<a href="images/gallery-6.jpeg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.7s">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-6.jpeg" alt="Image 6">
+				</a>
+
+				<a href="images/gallery-7.jpeg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-7.jpeg" alt="Image 7">
+				</a>
+				<a href="images/gallery-8.jpeg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-8.jpeg" alt="Image 8">
+				</a>
+				<a href="images/gallery-9.jpeg" class="gallery-item" data-effect="mfp-zoom-in"> 
+					<span class="gallery-border"></span>
+					<img src="images/gallery-9.jpeg" alt="Image 9">
+				</a>
+				<a href="images/gallery-10.jpeg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-10.jpeg" alt="Image 10">
+				</a>
+				<a href="images/gallery-11.jpeg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/gallery-11.jpeg" alt="Image 11">
+				</a>
+				
+			</div>
+
+			<div class="gallery-btn">
+				<a href="#" class="def-btn wow fadeInUp" data-wow-delay="0.2s">Show more</a>
+			</div>
+			<!--------------------------------------[photo gallery]--------------------------------------------------------------------->
+		</div>
+	</section>
+
+	<section class="s-why" id="s-why">
+		<div class="container">
+			<div class="why-row">
+
+				<div class="why-left">
+					<h2 class="def-title wow fadeInLeft" data-wow-delay="0.1s">Why us?</h2>
+					<div class="def-desc wow fadeInLeft" data-wow-delay="0.2s">
+						We offer competitive rates without compromising on the quality of our services. <br> 
+					</div>
+	
+					<div class="why-features">
+	
+						<div class="why-features-item">
+							<div class="why-features-icon wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/check-mark.svg" alt="Check mark">
+							</div>
+	
+							<div class="why-features-right">
+								<div class="why-features-title wow fadeInRight" data-wow-delay="0.4s">Experienced Professionals</div>
+								<div class="why-features-desc wow fadeInRight" data-wow-delay="0.5s">
+									Our team comprises skilled electricians and plumbers with years of experience.
+								</div>
+							</div>
+						</div>
+	
+						<div class="why-features-item">
+							<div class="why-features-icon wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/check-mark.svg" alt="Check mark">
+							</div>
+	
+							<div class="why-features-right">
+								<div class="why-features-title wow fadeInRight" data-wow-delay="0.4s">Quality Workmanship</div>
+								<div class="why-features-desc wow fadeInRight" data-wow-delay="0.5s">
+									We pride ourselves on delivering high-quality work that meets your expectations.
+								</div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+
+				<div class="why-right">
+					<img src="images/why-bg.jpg" alt="Почему мы?" class="wow fadeIn" data-wow-delay="0.6s">
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="s-team" id="s-team">
+		<div class="container">
+			<h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Our Reviews</h2>
+			<div id="reviews"></div>
+				<div class="team-row">
+					<div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+						<div class="team-thumb">
+	<div class='sk-ww-google-reviews' data-embed-id='25419355'></div>
+	</div>
+	<script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+	
+<!----
+	<section class="s-team" id="s-team">
+		<div class="container">
+			<h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Our Reviews</h2>
+			<div id="reviews"></div>
+				<div class="team-row">
+
+				<div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+					<div class="team-thumb">
+						<img src="images/team-1.jpg" alt="Igor Protopsky">
+					</div>
+					<div class="team-body">
+						<div class="team-profi">Director</div>
+						<div class="team-name">Igor Protopsky</div>
+					</div>
+				</div>
+
+				<div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+					<div class="team-thumb">
+						<img src="images/team-2.jpg" alt="Alexander Muraviev">
+					</div>
+					<div class="team-body">
+						<div class="team-profi">Manager</div>
+						<div class="team-name">Alexander Muraviev</div>
+					</div>
+				</div>
+
+				<div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+					<div class="team-thumb">
+						<img src="images/team-3.jpg" alt="Sergey Delfinov">
+					</div>
+					<div class="team-body">
+						<div class="team-profi">Finisher</div>
+						<div class="team-name">Sergey Delfinov</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>--->
+	</section>
+
+	<section class="s-reviews" id="s-testimonials" style="background-image: url('images/reviews-bg.png');">
+		<div class="container">
+			<h2 class="center-title color-white wow fadeIn" data-wow-delay="0.1s">Our Location</h2>
+			<!-- Google Map Embed Code -->
+			<style>
+				.map-container {
+					position: relative;
+					width: 100%;
+					padding-bottom: 56.25%; /* 16:9 aspect ratio */
+				}
+				.map-container iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border: 0;
+				}
+			</style>
+			<div class="map-container">
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15656.994780589142!2d77.34996!3d11.1692132!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba905be9bee0385%3A0x12cb5771828e3266!2sKALIDAS%20ELECTRICAL%20AND%20PLUMBING%20WORKS!5e0!3m2!1sen!2sin!4v1717083302896!5m2!1sen!2sin" 
+
+referrerpolicy="no-referrer-when-downgrade" 
+
+allowfullscreen="" 
+loading="lazy">
+</iframe>
+			</div>
+		<!----	<div class="swiper reviews-swiper">
+				
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<div class="reviews-item wow fadeInUp" data-wow-delay="0.2s">
+							<div class="reviews-thumb">
+								<img src="images/client-1.jpg" alt="Konstantin Kuzmin">
+							</div>
+
+							<div class="reviews-body">
+								<div class="reviews-name">Konstantin Kuzmin</div>
+								<div class="reviews-profi">Founder of LIFECONST</div>
+								<div class="reviews-comment">
+									I was very impressed with the result that I ordered. Construction Company has fulfilled all my expectations!
+								</div>
+								<div class="reviews-social">
+									<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+									<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+									<a href="#"><img src="images/social-telegram-gray.svg" alt="Telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item wow fadeInUp" data-wow-delay="0.3s">
+							<div class="reviews-thumb">
+								<img src="images/client-2.jpg" alt="Rakesh Juggernaut">
+							</div>
+							
+							<div class="reviews-body">
+								<div class="reviews-name">Rakesh Juggernaut</div>
+								<div class="reviews-profi">Director of the BRUK shopping center</div>
+								<div class="reviews-comment">
+									Ordered design for our building. I am very pleased with the result. The company treats its customers responsibly
+								</div>
+								<div class="reviews-social">
+									<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+									<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+									<a href="#"><img src="images/social-telegram-gray.svg" alt="Telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item wow fadeInUp" data-wow-delay="0.4s">
+							<div class="reviews-thumb">
+								<img src="images/client-3.jpg" alt="Zabava Lukia">
+							</div>
+							
+							<div class="reviews-body">
+								<div class="reviews-name">Zabava Lukia</div>
+								<div class="reviews-profi">Commercial director of MAGNUM</div>
+								<div class="reviews-comment">
+									I wanted to renovate my office. Booked a home repair service. The guys took care of me from start to finish. I recommend!
+								</div>
+								<div class="reviews-social">
+									<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+									<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+									<a href="#"><img src="images/social-telegram-gray.svg" alt="Telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item">
+							<div class="reviews-thumb">
+								<img src="images/client-4.jpg" alt="Kira Dorova">
+							</div>
+							
+							<div class="reviews-body">
+								<div class="reviews-name">Kira Dorova</div>
+								<div class="reviews-profi">AUDITSTROY department manager</div>
+								<div class="reviews-comment">
+									Construction has fulfilled all my expectations. I was very impressed with the result that I ordered.
+								</div>
+								<div class="reviews-social">
+									<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+									<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+									<a href="#"><img src="images/social-telegram-gray.svg" alt="Telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item">
+							<div class="reviews-thumb">
+								<img src="images/client-5.jpg" alt="Alex Pakovsky">
+							</div>
+							
+							<div class="reviews-body">
+								<div class="reviews-name">Alex Pakovsky</div>
+								<div class="reviews-profi">Founder of INVESTBASK company</div>
+								<div class="reviews-comment">
+									I ordered a renovation for my office from Construction. Everyone did great. I recommend this company.
+								</div>
+								<div class="reviews-social">
+									<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+									<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+									<a href="#"><img src="images/social-telegram-gray.svg" alt="Telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item">
+							<div class="reviews-thumb">
+								<img src="images/client-6.jpg" alt="Dina Cvetova">
+							</div>
+							
+							<div class="reviews-body">
+								<div class="reviews-name">Dina Cvetova</div>
+								<div class="reviews-profi">Store owner FLOWERSMARK</div>
+								<div class="reviews-comment">
+									For a long time I was looking for solutions for the project I wanted to implement, but Construction helped me with this. Highly recommend!
+								</div>
+								<div class="reviews-social">
+									<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+									<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+									<a href="#"><img src="images/social-telegram-gray.svg" alt="Telegram"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			
+				<div class="swiper-pagination"></div>
+			
+			</div>
+
+		</div>-->
+	</section>
+
+<!----
+	<div class="s-partners" id="s-partners">
+		<div class="partners-row">
+			
+			<div class="partners-item"><img src="images/partner-1.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-2.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-3.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-4.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-5.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-1.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-2.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-3.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-4.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/partner-5.svg" alt="partner"></div>
+			
+		</div>
+	</div>-->
+
+	<section class="s-form" id="s-contact">
+		<div class="container">
+			<div class="form-row">
+
+				<div class="form-left">
+					<h2 class="def-title">Do you have any questions?</h2>
+					<div class="def-desc">
+						If you have any questions or would like to order our services from us, please fill out the form on the right. Our managers work around the clock and will call you back during the day.
+					</div>
+					<div class="form-image">
+						<img src="images/form-bg.jpg" alt="Feedback form">
+					</div>
+				</div>
+
+				<div class="form-right">
+					<form id="contactForm">
+						<input type="text" id="name" placeholder="Your name*" required>
+						<input type="text" id="phone" placeholder="Your phone*" required>
+						<input type="text" id="email" placeholder="Your email">
+						<textarea cols="30" rows="5" id="comment" placeholder="Comment"></textarea>
+						<button type="submit" class="def-btn form-button">Send</button>
+					</form>
+					<script>
+						document.getElementById('contactForm').addEventListener('submit', function(event) {
+							event.preventDefault();
+				
+							var name = document.getElementById('name').value;
+							var phone = document.getElementById('phone').value;
+							var email = document.getElementById('email').value;
+							var comment = document.getElementById('comment').value;
+				
+							// Construct message for WhatsApp
+							var message = encodeURIComponent(
+								`Name: ${name}%0A` +
+								`Phone: ${phone}%0A` +
+								(email ? `Email: ${email}%0A` : '') +
+								`Comment: ${comment}%0A%0A` +
+								`customer.`
+							);
+				
+							// WhatsApp number to send the message to (including country code)
+							var phoneNumber = '+917904812822'; // Replace with your WhatsApp number
+				
+							// WhatsApp URL
+							var whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+				
+							// Open WhatsApp in new tab
+							window.open(whatsappUrl, '_blank').focus();
+						});
+					</script>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="footer-row">
+
+				<div class="footer-left">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="images/KEPS.svg" alt="Construction">
+						</a>
+					</div>
+					<div class="footer-desc">
+						<strong>KEPS</strong> Your Trusted Partner for Electrical and Plumbing Services.
+					</div>
+				</div>
+
+				<div class="footer-right">
+					<nav class="footer-nav">
+						<h5 class="footer-title">Our services</h5>
+						<ul>
+							<li><a href="#">Home Wiring Works</a></li>
+							<li><a href="#">Plumbing Works</a></li>
+							<li><a href="#">Industrial Wiring</a></li>
+						</ul>
+					</nav>
+
+					<div class="footer-nav">
+						<h5 class="footer-title">Schedule</h5>
+						<ul>
+							<li>Monday: 9:30 am - 9:00 pm</li>
+							<li>Tuesday:  9:30 am - 9:00 pm</li>
+							<li>Wednesday:  9:30 am - 9:00 pm</li>
+							<li>Thursday:  9:30 am - 9:00 pm</li>
+							<li>Friday:  9:30 am - 9:00 pm</li>
+							<li>Saturday: 9:30 am - 9:00 pm </li>
+							<li>Sunday: Closed</li>
+						</ul>
+					</div>
+
+					<div class="footer-nav">
+						<h5 class="footer-title">Contacts</h5>
+						<div class="footer-info-item">
+							<div class="footer-info-icon"><img src="images/location-gray.svg" alt="Location"></div>
+							<div class="footer-info-text"> 8/3180, PN Rd, Anna Nagar, Tiruppur.</div>
+						</div>
+						<a href="tel:+91 95979 77228" class="footer-info-item">
+							<div class="footer-info-icon"><img src="images/phone-gray.svg" alt="Phone"></div>
+							<div class="footer-info-text">+91 95979 77228</div>
+						</a>
+
+						<div class="footer-social">
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+								<img src="images/social-twitter-gray.svg" alt="Twitter">
+							</a>
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+								<img src="images/social-insta.svg" alt="Вконтакте">
+							</a>
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+								<img src="images/social-facebook-gray.svg" alt="Facebook">
+							</a>
+							<a href="https://www.instagram.com/kalidas_tiruppur?igsh=MWE5N2NocGJ2emFxNg==">
+								<img src="images/social-telegram-gray.svg" alt="Telegram">
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+			<div class="footer-copyright">
+				<div class="copyright-text">Copyright © 2024 KEPS. All rights reserved</div>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
